@@ -1,0 +1,129 @@
+/* ===== 전체 배경 ===== */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #fbf8f2;
+}
+
+.app {
+  min-height: 100vh;
+  background: #fbf8f2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Header ===== */
+.header {
+  height: 56px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fbf8f2;
+  border-bottom: 1px solid #eee;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  background: #8fa27a;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3e3e3e;
+}
+
+.settings-btn {
+  background: #8fa27a;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  color: white;
+  font-size: 18px;
+}
+
+/* ===== Main Content ===== */
+.content {
+  flex: 1;
+  padding: 16px;
+  padding-bottom: 80px; /* navbar 공간 */
+}
+
+/* ===== Bottom Nav ===== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 64px;
+  background: white;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #9a9a9a;
+  font-size: 12px;
+}
+
+.bottom-nav a.active {
+  color: #8fa27a;
+  font-weight: 600;
+}
+/* ===== Bottom Navigation ===== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #9a9a9a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+}
+
+.nav-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.nav-text {
+  font-size: 11px;
+}
+
+/* 활성화 상태 */
+.nav-item.active {
+  color: #8fa27a;
+}
+
+.nav-item.active .nav-icon {
+  transform: translateY(-1px);
+}
